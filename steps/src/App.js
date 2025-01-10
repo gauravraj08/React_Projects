@@ -7,6 +7,10 @@ const messages = [
 ];
 
 export default function App() {
+  return <Steps />;
+}
+
+function Steps() {
   const [step, setStep] = useState(1);
   const [isOpen, setOpen] = useState(true);
 
@@ -36,21 +40,26 @@ export default function App() {
           </p>
 
           <div className="buttons">
-            <button
-              style={{ backgroundColor: "#7950f2", color: "#fff" }}
-              onClick={handlePrevious}
-            >
-              Previous
-            </button>
-            <button
-              style={{ backgroundColor: "#7950f2", color: "#fff" }}
-              onClick={handleNext}
-            >
-              Next
-            </button>
+            <Button bgcolor="#7950f2" textColor="#fff" onClick={handlePrevious}>
+              <span>👈</span>Previous
+            </Button>
+            <Button bgcolor="#7950f2" textColor="#fff" onClick={handleNext}>
+              Next<span>👉</span>
+            </Button>
           </div>
         </div>
       )}
     </>
+  );
+}
+
+function Button({ textColor, bgcolor, onClick, children }) {
+  return (
+    <button
+      style={{ backgroundColor: bgcolor, color: textColor }}
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
 }
