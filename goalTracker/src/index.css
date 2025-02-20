@@ -1,0 +1,90 @@
+/* Apply styles to the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  height: 100vh;
+  margin: 0;
+}
+
+/* Center the main app container */
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+header {
+  font-size: 3rem;
+  color: #333;
+}
+/* Style the heading */
+h2 {
+  font-size: 25px;
+  color: #333;
+}
+
+/* Style the input field */
+input {
+  width: 70%;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the add button */
+button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #c94f1fd0;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ecc26c;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Style the goal list */
+.goal-list {
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* Each goal item */
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 5px 0;
+}
+
+/* Style the delete button */
+.delete-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
